@@ -106,6 +106,14 @@ public Patient getValuePatient(@PathParam("id_patient") String id){
 	}
 return pat;
 }
+/** 
+ * Reponse pour une requête GET par rapport à la liste
+ * des patients d'un medecin donné.
+ * @param id			id de medecin récuperé de la requete GET
+ * @return Response		Reponse sous forme d'une liste des objets JSON de type Patient
+ * @see					Patient
+ * 
+ * */
 @GET
 @Path("/medecin/{id_medecin}/patients")
 @Produces(MediaType.APPLICATION_JSON)

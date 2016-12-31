@@ -10,6 +10,13 @@ public class Patient {
     private String NoAssSociale;
     
 
+    /** 
+     * Reponse pour une requête GET par rapport à la liste
+     * des patients d'un medecin donné.
+     * @param id			id de medecin récuperé de la requete GET
+     * @return Response		Reponse sous forme d'une liste des objets JSON de type Patient
+     * 
+     * */
 	public String getNoAssSociale() {
 		return NoAssSociale;
 	}
